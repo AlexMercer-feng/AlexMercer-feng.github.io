@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Linux内核源码学习（3）——Epoll.ver1 | Pandora</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://alexmercer-feng.github.io//favicon.ico?v=1662102463489">
+<link rel="stylesheet" href="https://alexmercer-feng.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="之前的进程线程以及调度的部分都可以算是epoll的前置学习，本节的Epoll才是重头戏。
+本节的大部分内容都是整理自https://z.itpub.net/article/detail/4C305D5DB57429E3445ACED7FB8..." />
+    <meta name="keywords" content="Linux" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://alexmercer-feng.github.io/">
+        <img src="https://alexmercer-feng.github.io//images/avatar.png?v=1662102463489" class="site-logo">
+        <h1 class="site-title">Pandora</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      Welcome to the new World
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://alexmercer-feng.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Linux内核源码学习（3）——Epoll.ver1</h2>
+            <div class="post-date">2022-06-27</div>
+            
+            <div class="post-content" v-pre>
+              <p>之前的进程线程以及调度的部分都可以算是epoll的前置学习，本节的Epoll才是重头戏。</p>
+<p>本节的大部分内容都是整理自https://z.itpub.net/article/detail/4C305D5DB57429E3445ACED7FB8035B6（侵权删）</p>
+<figure data-type="image" tabindex="1"><img src="https://alexmercer-feng.github.io//post-images/1662100653491.svg" alt="" loading="lazy"></figure>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://alexmercer-feng.github.io/tag/oMleWORgq/" class="tag">
+                    Linux
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-2-diao-du/">
+                  <h3 class="post-title">
+                    Linux内核源码学习（2）——调度
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

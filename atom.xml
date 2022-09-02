@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://alexmercer-feng.github.io/</id>
+    <title>Pandora</title>
+    <updated>2022-09-02T07:10:52.566Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://alexmercer-feng.github.io/"/>
+    <link rel="self" href="https://alexmercer-feng.github.io/atom.xml"/>
+    <subtitle>Welcome to the new World</subtitle>
+    <logo>https://alexmercer-feng.github.io/images/avatar.png</logo>
+    <icon>https://alexmercer-feng.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Pandora</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux内核源码学习（5）——Epoll.ver2]]></title>
+        <id>https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-5-epollver2/</id>
+        <link href="https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-5-epollver2/">
+        </link>
+        <updated>2022-08-02T03:54:01.000Z</updated>
+        <content type="html"><![CDATA[<p>本节与ver1版的不同在于：不再局限于Epoll本身的运行逻辑，将流程中涉及到的其他部分也悉数加以整理。所以体量也更加饱满。</p>
+<p>本节参考了https://wenfh2020.com/2020/04/23/epoll-code/#5-%E6%BA%90%E7%A0%81%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B（侵权删）</p>
+<figure data-type="image" tabindex="1"><img src="https://alexmercer-feng.github.io//post-images/1662101230718.svg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux内核源码学习（4）——接收网络包]]></title>
+        <id>https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-4-jie-shou-wang-luo-bao/</id>
+        <link href="https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-4-jie-shou-wang-luo-bao/">
+        </link>
+        <updated>2022-07-13T11:05:40.000Z</updated>
+        <content type="html"><![CDATA[<p>如果要细算一个进程从epoll_wait被唤醒的流程，可以从网络包到达本机网卡开始，经过层层处理到达socket接收队列上，再继续软中断处理流程。</p>
+<p>本节主要参考了https://zhuanlan.zhihu.com/p/256428917 和 https://segmentfault.com/a/1190000008836467（侵权删）</p>
+<figure data-type="image" tabindex="1"><img src="https://alexmercer-feng.github.io//post-images/1662101012401.svg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux内核源码学习（0）]]></title>
+        <id>https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-0/</id>
+        <link href="https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-0/">
+        </link>
+        <updated>2022-07-13T01:49:18.000Z</updated>
+        <content type="html"><![CDATA[<p>本部分主要为Web sever项目的延伸，也是对以Epoll为核心的Linux部分源码逻辑的学习记录。涉及到的整理内容多是来自网络或书籍电子版，使用Excalidraw加以整理。</p>
+<p>大多数上传的SVG也是通过Excalidraw导出来的，虽然清晰度不是问题但是由于图像范围太大，看起来还是不太方便。如果需要原版draw文件请联系984652731@QQ.com。</p>
+<p>转载请注明出处；若有其他问题也请联系我</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux内核源码学习（3）——Epoll.ver1]]></title>
+        <id>https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-3-epollver1/</id>
+        <link href="https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-3-epollver1/">
+        </link>
+        <updated>2022-06-27T06:34:35.000Z</updated>
+        <content type="html"><![CDATA[<p>之前的进程线程以及调度的部分都可以算是epoll的前置学习，本节的Epoll才是重头戏。</p>
+<p>本节的大部分内容都是整理自https://z.itpub.net/article/detail/4C305D5DB57429E3445ACED7FB8035B6（侵权删）</p>
+<figure data-type="image" tabindex="1"><img src="https://alexmercer-feng.github.io//post-images/1662100653491.svg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux内核源码学习（2）——调度]]></title>
+        <id>https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-2-diao-du/</id>
+        <link href="https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-2-diao-du/">
+        </link>
+        <updated>2022-06-18T13:37:10.000Z</updated>
+        <content type="html"><![CDATA[<p>了解进程线程之后，真正开始进入学习Linux多任务调度体系的内容。<br>
+本节的整理主要分为核心调度部分与调度类两部分。</p>
+<figure data-type="image" tabindex="1"><img src="https://alexmercer-feng.github.io//post-images/1662100315619.svg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux内核源码学习（1）——进程&线程]]></title>
+        <id>https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-1-jin-cheng-andxian-cheng/</id>
+        <link href="https://alexmercer-feng.github.io/post/linux-nei-he-yuan-ma-xue-xi-1-jin-cheng-andxian-cheng/">
+        </link>
+        <updated>2022-06-03T12:27:22.000Z</updated>
+        <content type="html"><![CDATA[<p>进程和线程是Linux多任务体系的基础，所以此节SVG主要着眼于task_struct结构。</p>
+<figure data-type="image" tabindex="1"><img src="https://alexmercer-feng.github.io//post-images/1662099941988.svg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+</feed>
